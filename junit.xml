@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="10" time="2.915">
+  <testsuite name="undefined" errors="0" failures="10" skipped="0" timestamp="2021-09-04T16:58:39" time="2.287" tests="10">
+    <testcase classname=" Clicking on Create Task Button should add it to first stage and do nothing if input is empty" name=" Clicking on Create Task Button should add it to first stage and do nothing if input is empty" time="0.05">
+      <failure>Error: expect(element).toContainElement(element)
+
+&lt;ul class=&quot;styled mt-50&quot; data-testid=&quot;stage-0&quot; /&gt; does not contain: null
+        
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:42:23)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname=" For a task in stage 0, backward icon is disabled and forward icon is enabled" name=" For a task in stage 0, backward icon is disabled and forward icon is enabled" time="0.015">
+      <failure>Error: expect(element).toContainElement(element)
+
+&lt;ul class=&quot;styled mt-50&quot; data-testid=&quot;stage-0&quot; /&gt; does not contain: null
+        
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:74:23)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" For a task in stage 0, can be moved forward till stage 4 and check for icons are enabled/disabled correctly" name=" For a task in stage 0, can be moved forward till stage 4 and check for icons are enabled/disabled correctly" time="0.019">
+      <failure>Error: expect(element).toContainElement(element)
+
+&lt;ul class=&quot;styled mt-50&quot; data-testid=&quot;stage-0&quot; /&gt; does not contain: null
+        
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:106:23)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" For a task in stage 4, can be moved backward till stage 0 and check for icons are enabled/disabled correctly" name=" For a task in stage 4, can be moved backward till stage 0 and check for icons are enabled/disabled correctly" time="0.018">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;task-1-forward&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Kanban Board&quot;
+      /&gt;
+      &lt;div
+        class=&quot;mt-20 layout-column justify-content-center align-items-center&quot;
+      &gt;
+        &lt;section
+          class=&quot;mt-50 layout-row align-items-center justify-content-center&quot;
+        &gt;
+          &lt;input
+            class=&quot;large&quot;
+            data-testid=&quot;create-task-input&quot;
+            id=&quot;create-task-input&quot;
+            placeholder=&quot;New task name&quot;
+            type=&quot;text&quot;
+          /&gt;
+          &lt;button
+            class=&quot;ml-30&quot;
+            data-testid=&quot;create-task-button&quot;
+            type=&quot;submit&quot;
+          &gt;
+            Create task
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;div
+          class=&quot;mt-50 layout-row&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Backlog
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-0&quot;
+              &gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;1-name&quot;
+                    &gt;
+                      1
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;1-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;2-name&quot;
+                    &gt;
+                      2
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;2-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                To Do
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-1&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Ongoing
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-2&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Done
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-3&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:92:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:64:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:108:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:161:18)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" Clicking on delete should delete the task in stage 0" name=" Clicking on delete should delete the task in stage 0" time="0.014">
+      <failure>Error: expect(element).toContainElement(element)
+
+&lt;ul class=&quot;styled mt-50&quot; data-testid=&quot;stage-0&quot; /&gt; does not contain: null
+        
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:210:23)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" Clicking on delete should delete the task in stage 1" name=" Clicking on delete should delete the task in stage 1" time="0.011">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;task-1-forward&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Kanban Board&quot;
+      /&gt;
+      &lt;div
+        class=&quot;mt-20 layout-column justify-content-center align-items-center&quot;
+      &gt;
+        &lt;section
+          class=&quot;mt-50 layout-row align-items-center justify-content-center&quot;
+        &gt;
+          &lt;input
+            class=&quot;large&quot;
+            data-testid=&quot;create-task-input&quot;
+            id=&quot;create-task-input&quot;
+            placeholder=&quot;New task name&quot;
+            type=&quot;text&quot;
+          /&gt;
+          &lt;button
+            class=&quot;ml-30&quot;
+            data-testid=&quot;create-task-button&quot;
+            type=&quot;submit&quot;
+          &gt;
+            Create task
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;div
+          class=&quot;mt-50 layout-row&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Backlog
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-0&quot;
+              &gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;1-name&quot;
+                    &gt;
+                      1
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;1-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;2-name&quot;
+                    &gt;
+                      2
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;2-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                To Do
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-1&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Ongoing
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-2&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Done
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-3&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:92:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:64:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:108:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:235:18)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" Clicking on delete should delete the task in stage 2" name=" Clicking on delete should delete the task in stage 2" time="0.011">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;task-1-forward&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Kanban Board&quot;
+      /&gt;
+      &lt;div
+        class=&quot;mt-20 layout-column justify-content-center align-items-center&quot;
+      &gt;
+        &lt;section
+          class=&quot;mt-50 layout-row align-items-center justify-content-center&quot;
+        &gt;
+          &lt;input
+            class=&quot;large&quot;
+            data-testid=&quot;create-task-input&quot;
+            id=&quot;create-task-input&quot;
+            placeholder=&quot;New task name&quot;
+            type=&quot;text&quot;
+          /&gt;
+          &lt;button
+            class=&quot;ml-30&quot;
+            data-testid=&quot;create-task-button&quot;
+            type=&quot;submit&quot;
+          &gt;
+            Create task
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;div
+          class=&quot;mt-50 layout-row&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Backlog
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-0&quot;
+              &gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;1-name&quot;
+                    &gt;
+                      1
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;1-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;2-name&quot;
+                    &gt;
+                      2
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;2-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                To Do
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-1&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Ongoing
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-2&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Done
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-3&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:92:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:64:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:108:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:262:18)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" Clicking on delete should delete the task in stage 3" name=" Clicking on delete should delete the task in stage 3" time="0.012">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;task-1-forward&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Kanban Board&quot;
+      /&gt;
+      &lt;div
+        class=&quot;mt-20 layout-column justify-content-center align-items-center&quot;
+      &gt;
+        &lt;section
+          class=&quot;mt-50 layout-row align-items-center justify-content-center&quot;
+        &gt;
+          &lt;input
+            class=&quot;large&quot;
+            data-testid=&quot;create-task-input&quot;
+            id=&quot;create-task-input&quot;
+            placeholder=&quot;New task name&quot;
+            type=&quot;text&quot;
+          /&gt;
+          &lt;button
+            class=&quot;ml-30&quot;
+            data-testid=&quot;create-task-button&quot;
+            type=&quot;submit&quot;
+          &gt;
+            Create task
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;div
+          class=&quot;mt-50 layout-row&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Backlog
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-0&quot;
+              &gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;1-name&quot;
+                    &gt;
+                      1
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;1-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;2-name&quot;
+                    &gt;
+                      2
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;2-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                To Do
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-1&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Ongoing
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-2&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Done
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-3&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:92:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:64:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:108:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:290:18)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" after many forward and back operations, tasks are in correct state" name=" after many forward and back operations, tasks are in correct state" time="0.013">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;task-3-forward&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Kanban Board&quot;
+      /&gt;
+      &lt;div
+        class=&quot;mt-20 layout-column justify-content-center align-items-center&quot;
+      &gt;
+        &lt;section
+          class=&quot;mt-50 layout-row align-items-center justify-content-center&quot;
+        &gt;
+          &lt;input
+            class=&quot;large&quot;
+            data-testid=&quot;create-task-input&quot;
+            id=&quot;create-task-input&quot;
+            placeholder=&quot;New task name&quot;
+            type=&quot;text&quot;
+          /&gt;
+          &lt;button
+            class=&quot;ml-30&quot;
+            data-testid=&quot;create-task-button&quot;
+            type=&quot;submit&quot;
+          &gt;
+            Create task
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;div
+          class=&quot;mt-50 layout-row&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Backlog
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-0&quot;
+              &gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;1-name&quot;
+                    &gt;
+                      1
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;1-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;2-name&quot;
+                    &gt;
+                      2
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;2-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                To Do
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-1&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Ongoing
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-2&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Done
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-3&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:92:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:64:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:108:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:331:18)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" tasks are in correct state after multiple move and deletions" name=" tasks are in correct state after multiple move and deletions" time="0.012">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;task-1-forward&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Kanban Board&quot;
+      /&gt;
+      &lt;div
+        class=&quot;mt-20 layout-column justify-content-center align-items-center&quot;
+      &gt;
+        &lt;section
+          class=&quot;mt-50 layout-row align-items-center justify-content-center&quot;
+        &gt;
+          &lt;input
+            class=&quot;large&quot;
+            data-testid=&quot;create-task-input&quot;
+            id=&quot;create-task-input&quot;
+            placeholder=&quot;New task name&quot;
+            type=&quot;text&quot;
+          /&gt;
+          &lt;button
+            class=&quot;ml-30&quot;
+            data-testid=&quot;create-task-button&quot;
+            type=&quot;submit&quot;
+          &gt;
+            Create task
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;div
+          class=&quot;mt-50 layout-row&quot;
+        &gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Backlog
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-0&quot;
+              &gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;1-name&quot;
+                    &gt;
+                      1
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;1-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;1-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li
+                  class=&quot;slide-up-fade-in&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;li-content layout-row justify-content-between align-items-center&quot;
+                  &gt;
+                    &lt;span
+                      data-testid=&quot;2-name&quot;
+                    &gt;
+                      2
+                    &lt;/span&gt;
+                    &lt;div
+                      class=&quot;icons&quot;
+                    &gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-back&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_back
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only x-small mx-2&quot;
+                        data-testid=&quot;2-forward&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          arrow_forward
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                      &lt;button
+                        class=&quot;icon-only danger x-small mx-2&quot;
+                        data-testid=&quot;2-delete&quot;
+                      &gt;
+                        &lt;i
+                          class=&quot;material-icons&quot;
+                        &gt;
+                          delete
+                        &lt;/i&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                To Do
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-1&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Ongoing
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-2&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;card outlined ml-20 mt-0&quot;
+          &gt;
+            &lt;div
+              class=&quot;card-text&quot;
+            &gt;
+              &lt;h4&gt;
+                Done
+              &lt;/h4&gt;
+              &lt;ul
+                class=&quot;styled mt-50&quot;
+                data-testid=&quot;stage-3&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:92:38
+    at /projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:64:17
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:108:19)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:414:18)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
